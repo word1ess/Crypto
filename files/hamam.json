@@ -1,0 +1,44 @@
+{
+    "title": "Банные комплексы",
+    "images":[{
+        "imageSrc": "./img/photogallery/1.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/2.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/3.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/3.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/3.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/4.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/1.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/8.png",
+        "imageTitle": "Банные комплексы",
+        "imageText": "Описание текст текст текст текст текст"
+    }
+]
+}

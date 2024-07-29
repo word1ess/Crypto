@@ -1,0 +1,554 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/svgicons/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__row">
+        <a href="/" class="header__logo">
+            <img src="img/svgicons/logo.svg" alt="logo">
+        </a>
+        <div class="header__links">
+            <a href="#">Trade</a>
+            <a href="#">Buy Crypto</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Risk Warnings</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="header__btns">
+            <div class="header__theme-toggle">
+                <img src="img/svgicons/light-theme.svg" alt="light-theme">
+                <img src="img/svgicons/dark-theme.svg" alt="dark-theme">
+            </div>
+            <div class="header__profile dropdown-container">
+                <img src="img/svgicons/user.svg" alt="user">
+                <ul class="header-down__menu dropdown-menu">
+                    <div class="dropdown-container__row">
+                        <li>Overview</li>
+                        <li>
+                            <header class="dropdown-container__header">
+                                <img src="img/svgicons/profile.svg" alt="profile">
+                                Profile -
+                                <span>Not verified</span>
+                            </header>
+                            <p>Account details</p>
+                        </li>
+                        <li>
+                            <header class="dropdown-container__header">
+                                <img src="img/svgicons/promo.svg" alt="promo">
+                                Promo code
+                            </header>
+                            <p>Increase your income</p>
+                        </li>
+                        <li>
+                            <header class="dropdown-container__header">
+                                <img src="img/svgicons/transactions.svg" alt="transactions">
+                                Transactions
+                            </header>
+                            <p>Transactions history</p>
+                        </li>
+                        <li>
+                            <header class="dropdown-container__header">
+                                <img src="img/svgicons/logout.svg" alt="logout">
+                                Log out
+                            </header>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <a href="#" class="btn">Wallet</a>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="replace" viewBox="0 0 15 15">
+        <g>
+            <path d="M9.58582 1.91999L7.78674 0.122945C7.70518 0.0414834 7.5964 -0.000223195 7.48396 2.07033e-05C7.36944 -0.00107684 7.25822 0.0414834 7.17666 0.122945L5.41469 1.88291C5.24963 2.04779 5.24963 2.31583 5.41469 2.48059L5.64189 2.70753C5.80122 2.86668 6.07934 2.86668 6.23878 2.70753L6.91332 2.0323V4.5136C6.91332 4.52116 6.91771 4.52738 6.91906 4.53445C6.93737 4.75067 7.11892 4.92176 7.34026 4.92176H7.66135C7.89466 4.92176 8.08646 4.7325 8.08646 4.49945V4.22238C8.08646 4.22117 8.08646 4.22031 8.08646 4.21934V2.06913L8.76124 2.74448C8.92631 2.90936 9.19405 2.90936 9.35899 2.74448L9.58582 2.51778C9.75089 2.35278 9.75089 2.08462 9.58582 1.91999Z"/>
+            <path d="M9.58558 12.4826L9.3585 12.2553C9.19917 12.0959 8.92093 12.0959 8.76136 12.2553L8.08658 12.9306V10.79C8.08658 10.7887 8.08658 10.788 8.08658 10.7869V10.5098C8.08658 10.2767 7.89466 10.0781 7.6616 10.0781H7.34026C7.11916 10.0781 6.93761 10.2536 6.91918 10.4701C6.91784 10.4773 6.91344 10.4883 6.91344 10.4957V12.9677L6.2389 12.2925C6.07946 12.1332 5.80073 12.1332 5.64128 12.2925L5.4142 12.5194C5.24938 12.6842 5.24963 12.9524 5.41469 13.1172L7.17678 14.8771C7.25626 14.9567 7.36236 15 7.47187 15H7.48774C7.60116 15 7.70701 14.9568 7.78661 14.8771L9.58558 13.0802C9.75064 12.9154 9.75064 12.6474 9.58558 12.4826Z"/>
+            <path d="M4.48584 6.91392H4.20712C4.20626 6.91392 4.20541 6.91392 4.20443 6.91392H2.07155L2.74768 6.24223C2.8274 6.16272 2.87123 6.05833 2.87123 5.94528C2.87123 5.83211 2.8274 5.72687 2.74768 5.64748L2.52047 5.42102C2.35541 5.25615 2.08694 5.25639 1.92212 5.42127L0.12303 7.21819C0.0414756 7.29953 -0.00210977 7.40867 8.78112e-05 7.52062C-0.00223186 7.63708 0.0414756 7.7461 0.12303 7.82756L1.885 9.58766C1.96754 9.67009 2.07583 9.71131 2.18424 9.71131C2.29266 9.71131 2.40095 9.67009 2.48348 9.58766L2.71056 9.36083C2.79029 9.28132 2.83424 9.1751 2.83424 9.06206C2.83424 8.94889 2.79041 8.84157 2.71056 8.76218L2.03468 8.08585H4.49866C4.50611 8.08585 4.51832 8.08402 4.5254 8.08268C4.74198 8.06439 4.91889 7.88549 4.91889 7.66452V7.34331C4.91889 7.11051 4.71915 6.91392 4.48584 6.91392Z"/>
+            <path d="M14.8769 7.21831L13.0778 5.42151C12.9128 5.25664 12.6444 5.25664 12.4794 5.42151L12.2525 5.64846C12.1727 5.72785 12.1288 5.83406 12.1288 5.94711C12.1288 6.06028 12.1726 6.16272 12.2525 6.24223L12.9285 6.91392H10.7819C10.7808 6.91392 10.78 6.91392 10.779 6.91392H10.5017C10.2684 6.91392 10.0811 7.11038 10.0811 7.34331V7.66452C10.0811 7.88549 10.251 8.06415 10.4677 8.08256C10.4749 8.08402 10.4801 8.08585 10.4874 8.08585H12.9655L12.2892 8.76206C12.2096 8.84145 12.1657 8.94852 12.1657 9.06132C12.1657 9.17461 12.2095 9.28108 12.2892 9.36059L12.5165 9.58753C12.599 9.66997 12.7072 9.71131 12.8157 9.71131C12.9241 9.71131 13.0322 9.67009 13.1148 9.58766L14.877 7.82756C14.9583 7.74635 15.0019 7.6372 14.9999 7.52513C15.0018 7.40867 14.9582 7.29953 14.8769 7.21831Z"/>
+            <path d="M7.5002 6.32735C6.85301 6.32735 6.32644 6.85331 6.32644 7.49989C6.32644 8.14634 6.85301 8.67243 7.5002 8.67243C8.14738 8.67243 8.67407 8.14634 8.67407 7.49989C8.67407 6.85331 8.14738 6.32735 7.5002 6.32735Z"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content">
+                <section class="intro">
+                    <div class="intro__info">
+                        <h1>
+                            Crypto Trading with a Leading exchange
+                        </h1>
+                        <h2>Fast transactions, minimal commission, many different tokens, easy and intuitive functionality.</h2>
+                        <a href="#" class="btn">Sign up</a>
+                    </div>
+                    <div class="intro__img">
+                        <img src="img/index/intro/1.png" alt="intro-bg">
+                    </div>
+                </section>
+                <article class="cards article">
+                    <div class="cards__row">
+                        <div class="cards__card">
+                            <header class="cards__header">
+                                <img src="img/coins/btc.png" alt="">
+                                <div class="cards__name">
+                                    <p>BTC</p>
+                                    <p>Bitcoin</p>
+                                </div>
+                            </header>
+                            <main class="cards__main">
+                                <p>57294.01</p>
+                                <div>
+                                    <img src="img/svgicons/up.svg" alt="">
+                                    <p> 1.57</p>
+                                </div>
+                            </main>
+                            <footer class="cards__footer">
+                                24h Volume: 17196.11 B
+                            </footer>
+                        </div>
+                        <div class="cards__card">
+                            <header class="cards__header">
+                                <img src="img/coins/eth.png" alt="">
+                                <div class="cards__name">
+                                    <p>ETH</p>
+                                    <p>Ethereum</p>
+                                </div>
+                            </header>
+                            <main class="cards__main">
+                                <p>57294.01</p>
+                                <div>
+                                    <img src="img/svgicons/up.svg" alt="">
+                                    <p> 1.57</p>
+                                </div>
+                            </main>
+                            <footer class="cards__footer">
+                                24h Volume: 17196.11 B
+                            </footer>
+                        </div>
+                        <div class="cards__card">
+                            <header class="cards__header">
+                                <img src="img/coins/bnb.png" alt="">
+                                <div class="cards__name">
+                                    <p>BNB</p>
+                                    <p>BNB</p>
+                                </div>
+                            </header>
+                            <main class="cards__main">
+                                <p>57294.01</p>
+                                <div>
+                                    <img src="img/svgicons/down.svg" alt="">
+                                    <p> 1.57</p>
+                                </div>
+                            </main>
+                            <footer class="cards__footer">
+                                24h Volume: 17196.11 B
+                            </footer>
+                        </div>
+                        <div class="cards__card">
+                            <header class="cards__header">
+                                <img src="img/coins/bch.png" alt="">
+                                <div class="cards__name">
+                                    <p>BCH</p>
+                                    <p>Bitcoin Cash</p>
+                                </div>
+                            </header>
+                            <main class="cards__main">
+                                <p>57294.01</p>
+                                <div>
+                                    <img src="img/svgicons/up.svg" alt="">
+                                    <p> 1.57</p>
+                                </div>
+                            </main>
+                            <footer class="cards__footer">
+                                24h Volume: 17196.11 B
+                            </footer>
+                        </div>
+                        <div class="cards__card">
+                            <header class="cards__header">
+                                <img src="img/coins/ltc.png" alt="">
+                                <div class="cards__name">
+                                    <p>LTC</p>
+                                    <p>Litecoin</p>
+                                </div>
+                            </header>
+                            <main class="cards__main">
+                                <p>57294.01</p>
+                                <div>
+                                    <img src="img/svgicons/up.svg" alt="">
+                                    <p> 1.57</p>
+                                </div>
+                            </main>
+                            <footer class="cards__footer">
+                                24h Volume: 17196.11 B
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <article class="block-gradient article">
+                    <p>Fortex Launches Fortex Deposit Contest with 18,000 USDT Prize Fund</p>
+                </article>
+                <section class="advantages article">
+                    <a href="#" class="advantages__advantage">
+                        <main class="advantages__inner">
+                            <div class="btn">Earn Now</div>
+                            <h2>Create NFT for free Get a ticket to space</h2>
+                            <p>Go into space with Justin from 2024</p>
+                        </main>
+                        <img src="img/index/advantages/1.png" alt="">
+                    </a>
+                    <a href="#" class="advantages__advantage">
+                        <main class="advantages__inner">
+                            <div class="btn">Limited by number of prizes</div>
+                            <h2>
+                                Enjoy
+                                <span>1.5%-6%</span>
+                                APY  on ETH Flexible on Fortex Earn
+                            </h2>
+                            <p>Deposit and withdraw funds at any time</p>
+                        </main>
+                        <img src="img/index/advantages/2.png" alt="">
+                    </a>
+                    <a href="#" class="advantages__advantage">
+                        <main class="advantages__inner">
+                            <div class="btn">Time limited</div>
+                            <h2>
+                                Get
+                                <span>6% - 18%</span>
+                                APY   on ETH Flexible on Fortex Earn
+                            </h2>
+                            <ul>
+                                <li>Fast and flexible</li>
+                                <li>Safe and Stable</li>
+                            </ul>
+                        </main>
+                        <img src="img/index/advantages/3.png" alt="">
+                    </a>
+                    <a href="#" class="advantages__advantage">
+                        <main class="advantages__inner">
+                            <div class="btn">Start earning now</div>
+                            <h2>
+                                Up to
+                                <span>15% APY</span>
+                            </h2>
+                            <p>New fixed product listings:</p>
+                            <p class="text-big">trx | dot | btt</p>
+                        </main>
+                        <img src="img/index/advantages/4.png" alt="">
+                    </a>
+                </section>
+                <section class="how section">
+                    <div class="how__row">
+                        <div class="how__img">
+                            <img src="img/index/how/1.png" alt="">
+                        </div>
+                        <div class="how__info">
+                            <header class="block-header">
+                                <h3>How it works</h3>
+                                <h2>A few easy steps</h2>
+                            </header>
+                            <main class="how__main">
+                                <div class="how__step">
+                                    <header class="how__header">
+                                        <h3>Register</h3>
+                                    </header>
+                                    <p>Registration is a very easy process. Follow step by step and sign in.</p>
+                                </div>
+                                <div class="how__step">
+                                    <header class="how__header">
+                                        <h3>Start trading</h3>
+                                    </header>
+                                    <p>We support all types of cryptocurrency.</p>
+                                </div>
+                                <div class="how__step">
+                                    <header class="how__header">
+                                        <h3>Earn money</h3>
+                                    </header>
+                                    <p>Earn money on our platform safely and legally.</p>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </section>
+                <section class="trading section">
+                    <div class="block-bg">
+                        <header class="block-header flex">
+                            <h2>Catch Your Next Trading Opportunity</h2>
+                            <a href="#" class="btn btn__purple">
+                                See More
+                                <img src="img/svgicons/btn-arrow-purple.svg" alt="">
+                            </a>
+                        </header>
+                        <main class="trading__row">
+                            <div class="trading__table">
+                                <table class="main-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Trading Pairs</th>
+                                            <th>Last Traded Price</th>
+                                            <th>24H Change</th>
+                                            <th>Trade</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/coins/btc.png" alt="btc">
+                                                Bitcoin
+                                            </td>
+                                            <td>57244.00</td>
+                                            <td class="red">-2.96%</td>
+                                            <td>
+                                                <button class="btn btn__bordered">Trade</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/coins/btc.png" alt="btc">
+                                                Bitcoin
+                                            </td>
+                                            <td>57244.00</td>
+                                            <td class="green">-2.96%</td>
+                                            <td>
+                                                <button class="btn btn__bordered">Trade</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="trading__top">
+                                <h3>Top Gainers</h3>
+                                <table class="main-table main-table__small">
+                                    <tr>
+                                        <td>
+                                            <img src="img/coins/btc.png" alt="btc">
+                                            Bitcoin
+                                        </td>
+                                        <td class="green">57244.00</td>
+                                        <td class="red">-2.96%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/coins/btc.png" alt="btc">
+                                            Bitcoin
+                                        </td>
+                                        <td class="green">57244.00</td>
+                                        <td class="red">-2.96%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/coins/btc.png" alt="btc">
+                                            Bitcoin
+                                        </td>
+                                        <td class="green">57244.00</td>
+                                        <td class="red">-2.96%</td>
+                                    </tr>
+                                </table>
+                                <h3>New Listings</h3>
+                                <table class="main-table main-table__small">
+                                    <tr>
+                                        <td>
+                                            <img src="img/coins/btc.png" alt="btc">
+                                            Bitcoin
+                                        </td>
+                                        <td class="green">57244.00</td>
+                                        <td class="red">-2.96%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/coins/btc.png" alt="btc">
+                                            Bitcoin
+                                        </td>
+                                        <td class="green">57244.00</td>
+                                        <td class="red">-2.96%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/coins/btc.png" alt="btc">
+                                            Bitcoin
+                                        </td>
+                                        <td class="green">57244.00</td>
+                                        <td class="red">-2.96%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </main>
+                        <footer class="trading__footer">
+                            <a href="#" class="btn">
+                                Get Started
+                                <img src="img/svgicons/btn-arrow.svg" alt="">
+                            </a>
+                            <p>Sign up now to create your own portfolio for free!</p>
+                        </footer>
+                    </div>
+                </section>
+                <section class="protection section">
+                    <div class="block-bg">
+                        <header class="block-header">
+                            <h2>Our Commitment to Compliance and Your Protection</h2>
+                        </header>
+                        <main class="protection__row">
+                            <div class="protection__item">
+                                <header class="protection__header">
+                                    <img src="img/svgicons/protection/1.svg" alt="">
+                                    <h3>Triple-Layer Asset Protection</h3>
+                                </header>
+                                <main>
+                                    User funds are securely stored offline in cold wallets.
+                                    Experience Triple Fund Protection with our cold wallet storage, ensuring strong security for user assets through comprehensive protection, for a safe and reliable experience.
+                                </main>
+                            </div>
+                            <div class="protection__item">
+                                <header class="protection__header">
+                                    <img src="img/svgicons/protection/2.svg" alt="">
+                                    <h3>Privacy Protection</h3>
+                                </header>
+                                <main>
+                                    We integrate a privacy-first approach in all our products and services.
+                                    We are transparent about the data we gather from you, clearly stating how we utilize and share it.
+                                </main>
+                            </div>
+                            <div class="protection__item">
+                                <header class="protection__header">
+                                    <img src="img/svgicons/protection/3.svg" alt="">
+                                    <h3>Advanced Data Protection</h3>
+                                </header>
+                                <main>
+                                    Data is encrypted during storage and while in transit. Strict authorization controls are in place to ensure that only you can access your personal and private information.
+                                </main>
+                            </div>
+                            <div class="protection__item">
+                                <header class="protection__header">
+                                    <img src="img/svgicons/protection/4.svg" alt="">
+                                    <h3>Real-Time Monitoring</h3>
+                                </header>
+                                <main>
+                                    Fortex risk controls actively monitor and analyze user behavior in real-time. Upon detecting suspicious activity, withdrawals undergo enhanced authentication measures for added security.
+                                </main>
+                            </div>
+                            <div class="protection__item">
+                                <header class="protection__header">
+                                    <img src="img/svgicons/protection/5.svg" alt="">
+                                    <h3>Security by Design</h3>
+                                </header>
+                                <main>
+                                    Our system prioritizes security, featuring a secure development life cycle, thorough security testing, and continuous bug bounty programs.
+                                </main>
+                            </div>
+                            <div class="protection__more">
+                                <h3>Your Trusted Crypto Exchange</h3>
+                                <a href="#" class="btn">
+                                    Sign Up Now
+                                    <img src="img/svgicons/btn-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <article class="block-gradient article flex">
+                    <div class="block-gradient__item">
+                        <h3>45+</h3>
+                        <p>The best choice of millions of users</p>
+                    </div>
+                    <div class="block-gradient__item">
+                        <h3>$2,245,993,681</h3>
+                        <p>
+                            Trading volume 
+                            for 24h
+                        </p>
+                    </div>
+                    <div class="block-gradient__item">
+                        <h3>45+</h3>
+                        <p>Virtual Assets Prime</p>
+                    </div>
+                </article>
+                <article class="join article">
+                    <main class="join__row block-bg">
+                        <div class="join__item">
+                            <div class="join__info">
+                                <h3>“Name” Card</h3>
+                                <p>Seamlessly convert and pay with crypto worldwide</p>
+                                <a href="#" class="join__btn">
+                                    <img src="img/svgicons/btn-arrow-purple.svg" alt="">
+                                </a>
+                            </div>
+                            <img src="img/svgicons/join/1.svg" alt="">
+                        </div>
+                        <div class="join__item">
+                            <div class="join__info">
+                                <h3>Unified Trading Account</h3>
+                                <p>Trade Spot, Derivatives and Options from one account</p>
+                                <a href="#" class="join__btn">
+                                    <img src="img/svgicons/btn-arrow-purple.svg" alt="">
+                                </a>
+                            </div>
+                            <img src="img/svgicons/join/2.svg" alt="">
+                        </div>
+                        <div class="join__item">
+                            <div class="join__info">
+                                <h3>Bybit Web3</h3>
+                                <p>Next-level reliability, innovation, and opportunities in Web3.</p>
+                                <a href="#" class="join__btn">
+                                    <img src="img/svgicons/btn-arrow-purple.svg" alt="">
+                                </a>
+                            </div>
+                            <img src="img/svgicons/join/3.svg" alt="">
+                        </div>
+                    </main>
+                    <footer class="join__footer">
+                        <h2>Join us</h2>
+                        <a href="#" class="btn">
+                            Gifts for registration
+                            <img src="img/svgicons/btn-arrow.svg" alt="">
+                        </a>
+                    </footer>
+                </article>
+            </main>
+            <footer class="footer">
+    <div class="footer__row">
+        <div class="footer__logo">
+            <img src="img/svgicons/logo.svg" alt="logo">
+        </div>
+        <nav class="footer__item">
+            <h2>Legal</h2>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </nav>
+        <nav class="footer__item">
+            <h2>Legal</h2>
+            <a href="#">Security</a>
+            <a href="#">Risk Warning</a>
+        </nav>
+        <nav class="footer__item">
+            <h2>Service</h2>
+            <a href="#">Fees</a>
+            <a href="#">Referrals</a>
+        </nav>
+        <nav class="footer__item">
+            <h2>Company</h2>
+            <a href="#">About us</a>
+        </nav>
+        <nav class="footer__item">
+            <h2>Help</h2>
+            <a href="#">Faq</a>
+            <a href="#">Terms of Use</a>
+        </nav>
+    </div>
+    <div class="footer__copy">
+        Copyright © 2024  All rights reserved
+    </div>
+</footer>
+
+        </div>
+    </body>
+</html>

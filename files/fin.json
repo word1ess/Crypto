@@ -1,0 +1,44 @@
+{
+    "title": "Финская сауны",
+    "images":[{
+        "imageSrc": "./img/photogallery/1.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/2.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/3.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/3.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/3.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "img/photogallery/4.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/1.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/photogallery/8.png",
+        "imageTitle": "Финская Баня",
+        "imageText": "Описание текст текст текст текст текст"
+    }
+]
+}
