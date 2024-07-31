@@ -7,43 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/svgicons/logo.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script defer src="js/app.min.js"></script>
-    <title>Подстраница Документация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css?_v=20240731164826">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240731164826">
+    <script defer src="js/app.min.js?_v=20240731164826"></script>
+    <title>Попапы</title>
 </head>
 
     <body>
         <div class="wrapper">
-            <aside class="aside">
-    <a href="#">
-        <img src="img/svgicons/aside/1.svg" alt="Overview">
-        <p>Overview</p>
-    </a>
-    <a href="#">
-        <img src="img/svgicons/aside/2.svg" alt="Convert">
-        <p>Convert</p>
-    </a>
-    <a href="#">
-        <img src="img/svgicons/aside/3.svg" alt="Staking">
-        <p>Staking</p>
-    </a>
-    <a href="#" class="active">
-        <img src="img/svgicons/aside/4.svg" alt="Transactions">
-        <p>Transactions</p>
-    </a>
-    <a href="#">
-        <img src="img/svgicons/aside/5.svg" alt="Transfer">
-        <p>Transfer</p>
-    </a>
-    <a href="#" class="voucher">
-        <img src="img/svgicons/aside/6.svg" alt="Voucher">
-        <p>Voucher</p>
-    </a>
-</aside>
-
-            <main class="content">
-                <header class="header">
+            <header class="header user-login">
     <div class="header__row">
         <a href="/" class="header__logo">
             <img src="img/svgicons/logo.svg" alt="logo">
@@ -98,6 +70,9 @@
                 </ul>
             </div>
             <a href="#" class="btn">Wallet</a>
+            <div class="header__burger for-aside">
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
@@ -113,332 +88,222 @@
     </symbol>
 </svg>
 
-                <button class="btn btn-createApi">Создать апи</button>
-                <button class="btn btn-createApiCopy">Создать апи (Копирование)</button>
-                <button class="btn btn-addShop">Добавить магазин</button>
-                <button class="btn btn-changePassword">Не помню пароль</button>
-                <button class="btn btn-filters">Фильтры</button>
-                <button class="btn btn-changeWallet">Сменить кошелек</button>
-                <button class="btn btn-take">Получить</button>
-                <button class="btn btn-send">Отправить</button>
-                <button class="btn btn-deleteCard">Удалить карту</button>
-                <button class="btn btn-archiveCard">В архив</button>
-                <div class="dialogbox dialogbox-createApiCopy">
+            <main class="content">
+                <button class="btn btn-withdraw">Withdraw</button>
+                <button class="btn btn-withdrawSelect">Withdraw</button>
+                <button class="btn btn-withdrawSelectSecond">Withdraw</button>
+                <button class="btn btn-depositBtc">Deposit BTC</button>
+                <button class="btn btn-depositBtcSelect">depositBtc</button>
+                <button class="btn btn-depositBtcSelectSecond">depositBtc</button>
+                <button class="btn btn-transfer">Transfer</button>
+                <button class="btn btn-voucher">Voucher</button>
+                <div class="dialogbox dialogbox-depositBtc">
                     <div class="dialogbox__inner">
                         <div class="dialogbox__window">
                             <div class="dialogbox__close"></div>
-                            <h3>Создать API</h3>
-                            <p>Скопируйте поместите API на свой сайт</p>
+                            <header class="dialogbox__header center">
+                                <h3>Deposit BTC</h3>
+                                <p>on BTC</p>
+                            </header>
+                            <picture><source srcset="img/common/popup-btc.webp" type="image/webp"><img src="img/common/popup-btc.png" alt="" class="content-img"></picture>
+                            <p>
+                                Only send BTC to this address. Sending any other asset to
+                                this address may result in the loss of your deposit!
+                            </p>
+                            <p class="text-red">Minimal deposit amount: 0.002BTC</p>
                             <label class="copy">
-                                <p>Ваш API</p>
-                                <input type="text" value="27DOQLKAJT.NOA27DOQLKAJT.NOAQV4ASQ">
+                                <input type="text" value="bc1qag7c6sugk25lemq6r68rsh3glwum36f8w9h2vx">
                                 <button class="btn__url">
                                     <img src="img/svgicons/url.svg" alt="">
                                 </button>
                             </label>
+                            <picture><source srcset="img/common/popup-qr.webp" type="image/webp"><img src="img/common/popup-qr.png" alt="" class="content-img"></picture>
+                            <button type="submit" class="btn">Buy BTC fiat credit/debit card</button>
                         </div>
                     </div>
                 </div>
-                <div class="dialogbox dialogbox-createApi">
+                <div class="dialogbox dialogbox-depositBtcSelect">
                     <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
+                        <div class="dialogbox__window dialogbox__window__bg">
                             <div class="dialogbox__close"></div>
-                            <h3>Создать API</h3>
-                            <div class="dialogbox__create-api">
-                                <img src="img/common/api.png" alt="create-api">
-                                <div>
-                                    <h4>Сгенерировать API ключ</h4>
-                                    <p>Пожалуйста, храните ключ в безопасном месте и относитесь к ним как к своему паролю. Не передавайте ключ третьим лицам.</p>
-                                </div>
-                            </div>
-                            <a href="#" class="btn">Создать API</a>
+                            <header class="dialogbox__header center">
+                                <h3>Deposit BTC</h3>
+                                <p>on BTC</p>
+                            </header>
+                            <select class="dropdown">
+                                <option value="Eth">
+                                    Eth
+                                </option>
+                                <option value="Eth">Eth</option>
+                                <option value="Eth">Eth</option>
+                            </select>
+                            <select class="dropdown">
+                                <option value="Select a network">
+                                    Select a network
+                                </option>
+                                <option value="Select a network">Select a network</option>
+                                <option value="Select a network">Select a network</option>
+                            </select>
+                            <picture><source srcset="img/common/popup-bg.webp" type="image/webp"><img src="img/common/popup-bg.png" alt="" class="bg"></picture>
                         </div>
                     </div>
                 </div>
-                <div class="dialogbox dialogbox-addShop">
+                <div class="dialogbox dialogbox-depositBtcSelectSecond">
                     <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
+                        <div class="dialogbox__window dialogbox__window__bg">
                             <div class="dialogbox__close"></div>
-                            <h3>СДобавить магазин</h3>
-                            <label>
-                                <p>Название магазина</p>
-                                <input type="text" name="shop" placeholder="Магазин">
-                            </label>
-                            <a href="#" class="btn">Добавить магазин</a>
+                            <header class="dialogbox__header center">
+                                <h3>Deposit BTC</h3>
+                                <p>on BTC</p>
+                            </header>
+                            <select class="dropdown">
+                                <option value="Eth">
+                                    Eth
+                                </option>
+                                <option value="Eth">Eth</option>
+                                <option value="Eth">Eth</option>
+                            </select>
+                            <picture><source srcset="img/common/popup-bg.webp" type="image/webp"><img src="img/common/popup-bg.png" alt="" class="bg"></picture>
                         </div>
                     </div>
                 </div>
-                <div class="dialogbox dialogbox-changePassword">
+                <div class="dialogbox dialogbox-withdraw">
                     <div class="dialogbox__inner">
                         <div class="dialogbox__window">
                             <div class="dialogbox__close"></div>
-                            <h3>Не помню свой пароль</h3>
-                            <p>Введите электронный адрес своей учетной записи, и мы вышлем вам новый пароль</p>
+                            <header class="dialogbox__header center">
+                                <h3>Withdraw</h3>
+                                <p>Select a coin to withdraw funds</p>
+                            </header>
                             <label>
-                                <p>Ваш E-mail</p>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Ваш E-mail"
-                                    value="Shukhevych@gmail.com"
-                                >
+                                <p>ETH wallet address</p>
+                                <input type="text">
+                                <p>Do not send ETH  unless you are certain the destination supports ETH  transactions. If it does not, you could permanently lose access to your coins.</p>
                             </label>
-                            <a href="#" class="btn">Отправить</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="dialogbox dialogbox-filters">
-                    <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
-                            <div class="dialogbox__close"></div>
-                            <h3>Фильтры</h3>
-                            <p>Последние транзакции</p>
-                            <label>
-                                <p>Адрес кошелька</p>
-                                <input type="text" name="address" placeholder="Адрес кошелька">
-                            </label>
-                            <label>
-                                <p>Дата</p>
-                                <div class="currency dropdown-container">
-                                    <div class="arrow"></div>
-                                    <div class="currency__link dropdown-toggle hover-dropdown">
-                                        <p>
-                                            09.06.2022
-                                        </p>
-                                    </div>
-                                    <ul class="header-down__menu dropdown-menu">
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </label>
-                            <label>
-                                <p>Транзакция</p>
-                                <div class="currency dropdown-container">
-                                    <div class="arrow"></div>
-                                    <div class="currency__link dropdown-toggle hover-dropdown">
-                                        <p>
-                                            Все
-                                        </p>
-                                    </div>
-                                    <ul class="header-down__menu dropdown-menu">
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </label>
-                            <label>
-                                <p>Криптовалюта</p>
-                                <div class="currency dropdown-container">
-                                    <div class="arrow"></div>
-                                    <div class="currency__link dropdown-toggle hover-dropdown active">
-                                        <p>
-                                            Все
-                                        </p>
-                                    </div>
-                                    <ul class="header-down__menu dropdown-menu">
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </label>
-                            <label>
-                                <p>Статус</p>
-                                <div class="currency dropdown-container">
-                                    <div class="arrow"></div>
-                                    <div class="currency__link dropdown-toggle hover-dropdown">
-                                        <p>
-                                            Все
-                                        </p>
-                                    </div>
-                                    <ul class="header-down__menu dropdown-menu">
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                        <li class="header-down__link currency-down__link">
-                                            <p>
-                                                Валюта:
-                                                <span>$</span>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </label>
-                            <a href="#" class="btn">Применить фильтр</a>
-                            <a href="#" class="btn btn__bordered">Сброс</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="dialogbox dialogbox-changeWallet">
-                    <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
-                            <div class="dialogbox__close"></div>
-                            <h3>Сменить кошелек</h3>
-                            <p>Кошельки, отображаемые на главной странице</p>
-                            <label class="checkbox-wallet">
-                                <img src="img/svgicons/bitcoin.svg" alt="bitcoin">
-                                <input type="checkbox" class="checkbox-wallet__checkbox">
-                                <p>Bitcoin</p>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="dialogbox dialogbox-take">
-                    <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
-                            <div class="dialogbox__close"></div>
-                            <h3>Получить</h3>
-                            <p>Скопируйте и отправьте адрес своего кошелька</p>
-                            <div class="currency-small">
-                                <div class="currency-small__img">
-                                    <img src="img/svgicons/litecoin.svg" alt="litecoin">
-                                </div>
-                                <div class="currency-small__name">
-                                    <p>Litecoin</p>
-                                    <p>
-                                        100,50$
-                                        <span>+5,76%</span>
-                                    </p>
-                                </div>
-                                <div class="currency-small__lot">
-                                    <p>4,00</p>
-                                    <p>400,50$</p>
-                                </div>
-                            </div>
-                            <label class="copy">
-                                <p>Адрес кошелька</p>
-                                <input type="text" value="27DOQLKAJT.NOA27DOQLKAJT.NOAQV4ASQ">
-                                <button class="btn__url">
-                                    <img src="img/svgicons/url.svg" alt="">
-                                </button>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="dialogbox dialogbox-send">
-                    <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
-                            <div class="dialogbox__close"></div>
-                            <h3>Отправить</h3>
-                            <p>Заполните форму, чтобы отправить</p>
-                            <div class="currency-small">
-                                <div class="currency-small__img">
-                                    <img src="img/svgicons/litecoin.svg" alt="litecoin">
-                                </div>
-                                <div class="currency-small__name">
-                                    <p>Litecoin</p>
-                                    <p>
-                                        100,50$
-                                        <span>+5,76%</span>
-                                    </p>
-                                </div>
-                                <div class="currency-small__lot">
-                                    <p>4,00</p>
-                                    <p>400,50$</p>
-                                </div>
-                            </div>
-                            <label>
-                                <p>Адрес кошелька</p>
-                                <input type="text" placeholder="Адрес кошелька">
-                            </label>
-                            <div class="dialogbox__change">
-                                <label class="input-with-currency">
-                                    <p>Сумма</p>
-                                    <input type="text">
-                                    <p class="input-with-currency__currency">$</p>
-                                </label>
-                                <div class="dialogbox__change-btn">
-                                    <img src="img/svgicons/replace.svg" alt="change">
-                                </div>
-                                <label class="input-with-currency">
-                                    <input type="text">
-                                    <img src="img/svgicons/litecoin.svg" alt="litecoin">
-                                </label>
-                            </div>
-                            <div class="dialogbox__balance">
-                                <p>Баланс:</p>
+                            <label class="checkbox one-line">
+                                <input type="checkbox" class="custom-checkbox">
                                 <p>
-                                    400 BTC
-                                    <span>400 50$</span>
+                                    Save address for next time
                                 </p>
+                            </label>
+                            <div class="available">
+                                <p>Available balance</p>
+                                <p>2.1174206 ETH</p>
                             </div>
+                            <label>
+                                <p>Amount to withdraw</p>
+                                <input type="text">
+                                <button class="max">Max amount</button>
+                            </label>
+                            <label>
+                                <p>Withdraw fee</p>
+                                <input type="text">
+                            </label>
+                            <label>
+                                <p>Total</p>
+                                <input type="text">
+                            </label>
+                            <button type="submit" class="btn">Withdraw</button>
                         </div>
                     </div>
                 </div>
-                <div class="dialogbox dialogbox-deleteCard">
+                <div class="dialogbox dialogbox-withdrawSelect">
                     <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
+                        <div class="dialogbox__window dialogbox__window__bg">
                             <div class="dialogbox__close"></div>
-                            <h3>Удалить карту</h3>
-                            <p>Вы уверены, что хотите удалить карту?</p>
-                            <a href="#" class="btn btn__red">Удалить карту</a>
+                            <header class="dialogbox__header center">
+                                <h3>Withdraw</h3>
+                                <p>Select a coin to withdraw funds</p>
+                            </header>
+                            <select class="dropdown">
+                                <option value="Eth">
+                                    Eth
+                                </option>
+                                <option value="Eth">Eth</option>
+                                <option value="Eth">Eth</option>
+                            </select>
+                            <select class="dropdown">
+                                <option value="Select a network">
+                                    Select a network
+                                </option>
+                                <option value="Select a network">Select a network</option>
+                                <option value="Select a network">Select a network</option>
+                            </select>
+                            <picture><source srcset="img/common/popup-bg.webp" type="image/webp"><img src="img/common/popup-bg.png" alt="" class="bg"></picture>
                         </div>
                     </div>
                 </div>
-                <div class="dialogbox dialogbox-archiveCard">
+                <div class="dialogbox dialogbox-withdrawSelectSecond">
                     <div class="dialogbox__inner">
-                        <div class="dialogbox__window">
+                        <div class="dialogbox__window dialogbox__window__bg">
                             <div class="dialogbox__close"></div>
-                            <h3>В архив</h3>
-                            <p>Вы уверены, что хотите архивировать карту?</p>
-                            <a href="#" class="btn">В архив</a>
+                            <header class="dialogbox__header center">
+                                <h3>Withdraw</h3>
+                                <p>Select a coin to withdraw funds</p>
+                            </header>
+                            <select class="dropdown">
+                                <option value="Eth">
+                                    Eth
+                                </option>
+                                <option value="Eth">Eth</option>
+                                <option value="Eth">Eth</option>
+                            </select>
+                            <picture><source srcset="img/common/popup-bg.webp" type="image/webp"><img src="img/common/popup-bg.png" alt="" class="bg"></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialogbox dialogbox-transfer">
+                    <div class="dialogbox__inner">
+                        <div class="dialogbox__window ">
+                            <div class="dialogbox__close"></div>
+                            <header class="dialogbox__header center">
+                                <h3>Transfer</h3>
+                            </header>
+                            <label>
+                                <p>Name</p>
+                                <input type="text" placeholder="Select a coin">
+                            </label>
+                            <label>
+                                <p>From</p>
+                                <select class="dropdown">
+                                    <option value="Eth">
+                                        Eth
+                                    </option>
+                                    <option value="Eth">Eth</option>
+                                    <option value="Eth">Eth</option>
+                                </select>
+                            </label>
+                            <label>
+                                <p>From</p>
+                                <input type="text" placeholder="Select to wallet">
+                            </label>
+                            <div class="available">
+                                <p>Available balance</p>
+                                <p>2.1174206 ETH</p>
+                            </div>
+                            <label>
+                                <p>Amount to transfer</p>
+                                <input type="text">
+                                <button class="max">Max amount</button>
+                            </label>
+                            <button type="submit" class="btn">Transfer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialogbox dialogbox-voucher">
+                    <div class="dialogbox__inner">
+                        <div class="dialogbox__window dialogbox__window__bg">
+                            <div class="dialogbox__close"></div>
+                            <header class="dialogbox__header center">
+                                <h3>Voucher</h3>
+                                <p>Have a chance to increase your income.</p>
+                            </header>
+                            <label>
+                                <input type="text" placeholder="Enter a Voucher...">
+                            </label>
+                            <div class="text-red">Promo code was used!</div>
+                            <button class="btn">Activate</button>
+                            <picture><source srcset="img/common/popup-bg.webp" type="image/webp"><img src="img/common/popup-bg.png" alt="" class="bg"></picture>
                         </div>
                     </div>
                 </div>
