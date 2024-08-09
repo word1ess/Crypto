@@ -925,6 +925,7 @@ label.copy .btn__url {
   display: flex;
   flex-direction: column;
   padding: 3.5714285714rem 6.4285714286rem;
+  margin-bottom: 3.9285714286rem;
 }
 .form-user h1 {
   text-align: center;
